@@ -111,32 +111,6 @@ The project is delivered as a Jupyter notebook (developed on **Kaggle**) that bu
 
 ---
 
-## 📁 Repository Structure
-
-> Adjust to match your repository layout.
-
-```
-.
-├── Meeting_Intelligence_System.ipynb   # Full pipeline + Gradio app (Kaggle notebook)
-├── README.md                           # This file
-├── requirements.txt                    # Python dependencies (see below)
-├── prompts/                            # (optional) prompts exported from the notebook
-│   ├── refinement_prompt.txt
-│   └── documentation_prompt.txt
-└── samples/
-    ├── sample_meeting.<wav|mp3|m4a>    # Shareable demo recording
-    ├── raw_transcript.txt
-    ├── refined_transcript.txt
-    ├── meeting_record.json
-    ├── meeting_record.txt
-    └── meeting_report.html
-```
-
-The prompts / model instructions live in the notebook:
-- **Refinement prompt** → `refine_transcript()`
-- **Documentation prompt** → `DOCUMENTATION_PROMPT`
-
----
 
 ## ⚙️ Setup & Run Instructions
 
