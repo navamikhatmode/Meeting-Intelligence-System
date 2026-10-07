@@ -17,14 +17,13 @@ An AI-powered meeting assistant that turns a recorded meeting into an accurate t
 3. [Models Used & Their Roles](#-models-used--their-roles)
 4. [Architecture & Data Flow](#-architecture--data-flow)
 5. [Features](#-features)
-6. [Repository Structure](#-repository-structure)
-7. [Setup & Run Instructions](#-setup--run-instructions)
-8. [Using the Web App](#-using-the-web-app)
-9. [Outputs](#-outputs)
-10. [Anti-Hallucination Design](#-anti-hallucination-design)
-11. [Error Handling](#-error-handling)
-12. [Evaluation Rubric Mapping](#-evaluation-rubric-mapping)
-13. [Limitations & Future Work](#-limitations--future-work)
+6. [Setup & Run Instructions](#-setup--run-instructions)
+7. [Using the Web App](#-using-the-web-app)
+8. [Outputs](#-outputs)
+9. [Anti-Hallucination Design](#-anti-hallucination-design)
+10. [Error Handling](#-error-handling)
+11. [Evaluation Rubric Mapping](#-evaluation-rubric-mapping)
+12. [Limitations & Future Work](#-limitations--future-work)
 
 ---
 
