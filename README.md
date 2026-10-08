@@ -168,6 +168,33 @@ Run the cells top to bottom. Note that the notebook contains a Kaggle-specific a
 | `soundfile` | Reading WAV audio / duration |
 | `gradio>=5,<6` | Interactive web interface |
 | `ffmpeg` (system) | Audio conversion to 16 kHz mono WAV |
+## Prototype Setup & Execution
+
+The prototype is implemented as a **Kaggle Jupyter Notebook** and runs the complete Meeting Intelligence pipeline through a Gradio web interface.
+
+### Setup
+
+1. Open the notebook in **Kaggle**.
+2. Enable **Internet = On** and use a **GPU T4 ×2** session.
+3. Run the notebook cells in order so that the Whisper and Qwen models, processing functions, and Gradio UI are initialized.
+4. Run the final **Launch** cell:
+
+   ```python
+   demo.queue(max_size=8).launch(share=True, debug=True)
+   ```
+5. The notebook prints a **public `gradio.live` URL**. Open this URL in a browser to access the prototype.
+6. **Keep the Kaggle notebook session running** while using the prototype; stopping the session terminates the web application.
+
+### Using the Prototype
+
+Upload or record a meeting audio file (**MP3, WAV, M4A, FLAC, or OGG**) and click **Process Meeting**.
+
+The prototype executes:
+
+**Audio → 16 kHz Mono WAV → Whisper → Raw Transcript → Qwen2.5-7B-Instruct → Refined Transcript → Qwen2.5-3B-Instruct → Summary, Minutes, Decisions & Action Items**
+
+The interface displays the results in separate tabs and provides downloads in **HTML, JSON, and TXT** formats.
+
 
 ---
 
